@@ -1,0 +1,304 @@
+/* common for all pages */
+
+html {
+    scroll-behavior: smooth;
+  }
+  * {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+  }
+  .content{
+    animation: drop-in 1s ease 200ms backwards;
+  }
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+
+
+  a[target="_blank"]:after {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
+    
+    color: white;
+  }
+
+  .topnav {
+    background-color: black;
+    width:100%;
+    max-width: 1390px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 0);
+    width: 25%;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+ /* Home page styling  */
+
+  img.image1 {
+    width: 100%;
+    height: auto;
+    max-width: 370px;
+    border-radius: 15px;
+    float: left;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+  img.image1:hover{
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  .container {
+    display: flex;
+    align-items: center top;
+    justify-content: center;
+    color: white;
+    width:100%;
+    max-width: 1390px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+    
+  }
+  .name{
+    font-size: 500%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+
+  .myintroduction{
+    font-size: 18;
+    font-weight: 400;
+    padding-left: 80px;
+    padding-right: 20px;
+    float: left;
+  }
+
+  .classintro{
+    background-image: url("https://www.iit.edu/sites/default/files/2019-10/mies_campus.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:scroll local;
+    padding: 3fr;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    width: 100%;
+    max-width: 1691px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  /* ci = class intro */
+
+  .cicontainer{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.679);
+    color:black;
+    border-radius: 15px;
+    padding: 50px;
+    width:100%;
+    max-width: 1390px;
+    margin: auto;
+    font-size: larger;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+
+  .cicontainer:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .storyheader{
+    color: white;
+  }
+  
+  .mystory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 3fr;
+    padding: 2%;
+    width:100%;
+    max-width: 1310px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 160px;
+    border-radius: 15px;
+    font-size: large;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+  .readmore {
+    color:white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 12px;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+  
+  .readmore:hover {
+    background-color: white;
+    color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.1s ease-in-out;
+  }
+
+  .mystory:hover{
+    border-radius: 15px;
+    -webkit-transform: scale(1.01, 1.01);
+            transform: scale(1.01, 1.01);
+  }
+
+  /* common to all pages */
+
+  .contact {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1390px;
+    border-top:1px solid lightgray;
+    margin: auto;
+    margin-top: 160px;
+  }
+  
+  .contact a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .contact a:hover {
+    color: white;
+  }
+
+  .inactiveLink {
+    pointer-events: none;
+    cursor: default;
+  }
+
+/* My Story page styles */
+
+  .mystoryfull{
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(50px, auto);
+  gap: 40px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 1390px;
+  margin: auto;
+  margin-bottom: 160px;
+  margin-top: 0px;
+  font-size: larger;
+  background: rgb(252,70,107);
+  background: linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 50%, rgba(63,94,251,1) 100%);
+  }
+
+  .story{
+  grid-row: span 2;
+  }
+
+  .mystoryheader{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 300%;
+  font-style: italic;
+  width: fit-content;
+  margin: auto;
+  max-width: 1390px;
+  padding: 50px;
+  margin-top: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-bottom: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  }
+
+  img.image2 {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  }
+  img.image2:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  }
+
+  img.image3 {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin: auto;
+  padding-top: 10px;
+  background-color: white;
+  }
