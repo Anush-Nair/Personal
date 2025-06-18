@@ -32,9 +32,9 @@ body {
   }
 
   .topnav {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     width:100%;
-    max-width: 1390px;
+    max-width: 1000px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -75,103 +75,175 @@ body {
   img.image1 {
     width: 100%;
     height: auto;
+    max-height: 450px;
     max-width: 370px;
     border-radius: 15px;
+    align-items: center;
     float: left;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
   }
-  img.image1:hover{
+  /*img.image1:hover{
     -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
-  }
+  }*/
   .container {
     display: flex;
-    align-items: center top;
+    align-items: center;
     justify-content: center;
     color: white;
     width:100%;
-    max-width: 1390px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 80px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
     
   }
+  /*
   .name{
-    font-size: 500%;
+    font-size: 400%;
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
+    -webkit-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
   }
 
+  .name:hover{
+    background: #3F5EFB;
+    background: linear-gradient(84deg,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
+  }*/
+
+  .name {
+  font-size: 400%;
+  font-weight: bold;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1), rgba(252, 70, 107, 1));
+  background-size: 200% 200%;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.8s ease-in-out, background 0.8s ease-in-out;
+}
+
+.name:hover {
+  background: radial-gradient(circle,rgba(252, 70, 107, 1) 0%, rgba(63, 94, 251, 1) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-position: right;
+  transition: background-position 0.8s ease-in-out, background 0.8s ease-in-out;
+}
+
   .myintroduction{
-    font-size: 18;
+    font-size: larger;
     font-weight: 400;
     padding-left: 80px;
     padding-right: 20px;
     float: left;
   }
 
-  .classintro{
-    background-image: url("https://www.iit.edu/sites/default/files/2019-10/mies_campus.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment:scroll local;
+  /* education section */
+
+    .edback{
     padding: 3fr;
     padding-top: 160px;
     padding-bottom: 160px;
     width: 100%;
     max-width: 1691px;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
   }
 
-  /* ci = class intro */
 
-  .cicontainer{  
+  .edubackcontainer{  
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.679);
-    color:black;
+    align-items: start;
+    justify-content: start;
+    background-color: black;
+    color:white;
     border-radius: 15px;
+    border: 1px solid white;
+    border-width: 2px;
     padding: 50px;
     width:100%;
-    max-width: 1390px;
+    max-width: 1000px;
     margin: auto;
     font-size: larger;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
   }
 
-  .cicontainer:hover{
+  .edubackcontainer:hover{
+    border: 2px solid rgb(197, 29, 29);
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+  }
+
+
+  /* Work section */
+  .workex{
+    padding: 3fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 1691px;
+    margin: auto;
+  }
+
+  .workexcontainer{  
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    background-color: rgba(255, 255, 255, 0.679);
+    color:black;
+    border-radius: 15px;
+    padding: 50px;
+    width:100%;
+    max-width: 1000px;
+    margin: auto;
+    font-size: larger;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+
+  .workexcontainer:hover{
     background-color: white;
     color: black;
   }
 
-  .storyheader{
+  /*Skills */
+
+  .skillheader{
     color: white;
+    font-size: x-large;
   }
   
-  .mystory{
+  .skills{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     justify-content: center;
+    height: auto;
     color: white;
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     padding: 3fr;
     padding: 2%;
     width:100%;
-    max-width: 1310px;
+    max-width: 1000px;
     margin: auto;
     margin-bottom: 100px;
-    margin-top: 160px;
     border-radius: 15px;
     font-size: large;
     -webkit-transition: all 0.3s ease-in-out;
@@ -208,7 +280,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1390px;
+    max-width: 1000px;
     border-top:1px solid lightgray;
     margin: auto;
     margin-top: 160px;
@@ -216,7 +288,7 @@ body {
   
   .contact a {
     float: left;
-    color: #333;
+    color: #4e8de6;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -230,9 +302,19 @@ body {
   .inactiveLink {
     pointer-events: none;
     cursor: default;
+    color: white;
   }
 
+
+
+
+
 /* My Story page styles */
+
+
+
+
+
 
   .mystoryfull{
   align-items: center;
@@ -246,7 +328,7 @@ body {
   border: 2px solid white;
   border-radius: 15px;
   padding: 50px;
-  max-width: 1390px;
+  max-width: 1000px;
   margin: auto;
   margin-bottom: 160px;
   margin-top: 0px;
@@ -265,7 +347,7 @@ body {
   font-style: italic;
   width: fit-content;
   margin: auto;
-  max-width: 1390px;
+  max-width: 1000px;
   padding: 50px;
   margin-top: 80px;
   padding-bottom: 20px;
