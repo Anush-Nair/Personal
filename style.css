@@ -83,14 +83,12 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
   }
-  /*img.image1:hover{
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-  }*/
+
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     color: white;
     width:100%;
     max-width: 1000px;
@@ -101,27 +99,6 @@ body {
             transition: all 0.3s ease-in-out;
     
   }
-  /*
-  .name{
-    font-size: 400%;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-transition: all 0.8s ease-in-out;
-            transition: all 0.8s ease-in-out;
-  }
-
-  .name:hover{
-    background: #3F5EFB;
-    background: linear-gradient(84deg,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-transition: all 0.8s ease-in-out;
-            transition: all 0.8s ease-in-out;
-  }*/
 
   .name {
   font-size: 400%;
@@ -184,7 +161,8 @@ body {
   }
 
   .edubackcontainer:hover{
-    border: 2px solid rgb(197, 29, 29);
+    border: 2px solid rgba(252, 70, 107, 1);
+    border-radius: 30px;
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 
@@ -205,7 +183,7 @@ body {
     display: flex;
     align-items: start;
     justify-content: start;
-    background-color: rgba(255, 255, 255, 0.679);
+    background-color: rgba(255, 255, 255, 0.749);
     color:black;
     border-radius: 15px;
     padding: 50px;
@@ -218,58 +196,81 @@ body {
   }
 
   .workexcontainer:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    border: 2px solid rgba(63, 94, 251, 1);
+    border-radius: 30px;
+    color: white;
   }
 
   /*Skills */
 
-  .skillheader{
-    color: white;
-    font-size: x-large;
-  }
-  
-  .skills{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    height: auto;
-    color: white;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    padding: 3fr;
-    padding: 2%;
-    width:100%;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 100px;
-    border-radius: 15px;
-    font-size: large;
-    -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-  }
-  .readmore {
-    color:white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 12px;
-    -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-  }
-  
-  .readmore:hover {
-    background-color: white;
-    color: black;
-    -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.1s ease-in-out;
-  }
+  .skillheader {
+  color: white;
+  font-size: x-large;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
 
-  .mystory:hover{
-    border-radius: 15px;
-    -webkit-transform: scale(1.01, 1.01);
-            transform: scale(1.01, 1.01);
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  padding: 2%;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  font-size: large;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.core,
+.technologies {
+  flex: 1;
+  min-width: 300px;
+}
+
+.core {
+  padding-right: 20px;
+  border-right: 2px solid white;
+}
+
+.technologies {
+  padding-left: 20px;
+}
+
+.readmore {
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.readmore:hover {
+  background-color: white;
+  color: #3f5efb;
+}
+
+  .skills:hover{
+    border-radius: 30px;
+    -webkit-transform: scale(0.99, 0.99);
+            transform: scale(0.99, 0.99);
   }
 
   /* common to all pages */
