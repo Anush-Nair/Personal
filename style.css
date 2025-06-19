@@ -90,12 +90,15 @@ html {
       align-items: center;
       justify-content: center;
       padding: 10px;
+      border-bottom: solid 1px #FC466B;
+      border-top: solid 1px #3F5EFB;
+      border-radius: 15px;
       color: white;
       width: 100%;
       max-width: 1000px;
       margin: auto;
-      margin-top: 80px;
-      margin-bottom: 80px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       transition: all 0.3s ease-in-out;
     }
 
