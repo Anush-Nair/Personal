@@ -51,3 +51,34 @@ toggleBtnBottom.addEventListener('click', () => {
     // Scroll to top button
     toggleBtn.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+
+
+
+
+
+
+
+
+// Scroll reveal animations
+const observerOptions = {
+  threshold: 0.2 // triggers when 20% of the element is visible
+};
+
+const revealOnScroll = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      entry.target.classList.remove('out-of-view');
+    } else {
+      entry.target.classList.remove('in-view');
+      entry.target.classList.add('out-of-view');
+    }
+  });
+};
+
+const observer = new IntersectionObserver(revealOnScroll, observerOptions);
+
+// Observe all sections and cards
+document.querySelectorAll('section, .skill-card, .work-card, .iitc, .srmi, .prj1, .prj2, .prj3, .awards, .interest-card').forEach(el => {
+  observer.observe(el);
+});
