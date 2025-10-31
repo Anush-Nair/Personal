@@ -82,3 +82,48 @@ const observer = new IntersectionObserver(revealOnScroll, observerOptions);
 document.querySelectorAll('section, .skill-card, .work-card, .iitc, .srmi, .prj1, .prj2, .prj3, .awards, .interest-card').forEach(el => {
   observer.observe(el);
 });
+
+
+
+
+
+
+// --- Change "Home" text to "Top" after scrolling past intro ---
+
+// Select the first section (your intro container)
+const introSection = document.querySelector('.container');
+const homeLink = document.querySelector('.topnav a[href="#home"]');
+
+// Create an intersection observer to detect when intro is mostly out of view
+const introObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        homeLink.textContent = 'Go to Top';
+      } else {
+        homeLink.textContent = 'Home';
+      }
+    });
+  },
+  {
+    root: null,
+    threshold: 0.3 // triggers when 30% of intro is visible
+  }
+);
+
+// Observe the intro section
+if (introSection && homeLink) {
+  introObserver.observe(introSection);
+}
+
+
+
+
+homeLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+
+

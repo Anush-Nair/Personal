@@ -9,7 +9,16 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: rgb(23, 23, 23);
+background: linear-gradient(180deg, #181818, #1b1f3b, #2b0d3a);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
 }
+
+.name, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 
 .content {
   animation: drop-in 1s ease 200ms backwards;
