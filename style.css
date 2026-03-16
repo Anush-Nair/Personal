@@ -404,10 +404,14 @@ background: rgba(125, 123, 123, 0.15); /* semi-transparent white */
 backdrop-filter: blur(10px); /* frosted glass effect */
 -webkit-backdrop-filter: blur(10px); /* Safari support */
 border: 1px solid rgba(255, 255, 255, 0.2);
+-webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 }
 
 .iitc:hover, .srmi:hover{
-background: rgba(90, 160, 159, 0.15);
+background: rgba(28, 33, 33, 0.15);
+-webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 }
 
 
